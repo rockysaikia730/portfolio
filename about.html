@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me · Ahmed Rockey Saikia</title>
+  <meta name="description" content="Education, experience, publications, awards and skills of Ahmed Rockey Saikia, MSc student at EPFL.">
+  <meta name="author" content="Ahmed Rockey Saikia">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="About · Ahmed Rockey Saikia">
+  <meta property="og:url" content="https://rockysaikia730.github.io/about.html">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      var t;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container container-wide nav-wrap">
+      <a class="brand" href="index.html" aria-label="Ahmed Rockey Saikia — Home">
+        <span class="brand-name">Ahmed Rockey Saikia</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About Me</a>
+        <a href="projects.html">Projects</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container container-wide">
+
+
+    <div class="toc-layout">
+      <nav class="toc" aria-label="On this page">
+        <p class="toc-title">On this page</p>
+        <ol>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#earlier-research">Earlier research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#awards">Honours &amp; awards</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#leadership">Leadership &amp; teaching</a></li>
+          <li><a href="#languages">Languages</a></li>
+        </ol>
+      </nav>
+
+      <div class="toc-content">
+
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Education</h2>
+        </div>
+      </div>
+      <ol class="timeline">
+        <li class="entry current">
+          <span class="entry-date">Sep 2025 – Jan 2028 (expected)</span>
+          <h3 class="entry-title">Master of Science, Computational Science and Engineering</h3>
+          <p class="entry-org">École Polytechnique Fédérale de Lausanne (EPFL), Switzerland · GPA 5.4 / 6</p>
+        </li>
+        <li class="entry">
+          <span class="entry-date">Nov 2021 – May 2025</span>
+          <h3 class="entry-title">Bachelor of Technology, Engineering Physics</h3>
+          <p class="entry-org">Indian Institute of Technology (IIT) Roorkee, India · GPA 9.3 / 10 · Department Gold Medalist</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Experience</h2>
+        </div>
+      </div>
+      <ol class="timeline">
+        <li class="entry current">
+          <span class="entry-date">Aug 2026 – present</span>
+          <h3 class="entry-title">Software Engineer Intern</h3>
+          <p class="entry-org">IBM Research · Zürich, Switzerland</p>
+          <ul>
+            <li>Optimising a production query engine to meet sub-second read-latency requirements through sketch-based cardinality estimation, plan enumeration and incremental planning.</li>
+            <li>Benchmarking Flink batch and stream workloads on an OpenShift cluster to identify CPU and memory bottlenecks against freshness and cost SLOs.</li>
+            <li>Built an asynchronous query-executor framework that routes queries across multiple engines, manages the request lifecycle and aggregates system telemetry.</li>
+          </ul>
+        </li>
+        <li class="entry">
+          <span class="entry-date">Feb 2026 – Jun 2026</span>
+          <h3 class="entry-title">Research Assistant</h3>
+          <p class="entry-org">LIONS Lab, EPFL · Lausanne, Switzerland</p>
+          <ul>
+            <li>Pretrained masked diffusion and GIDD language models on a 131B-token corpus using PyTorch DDP and Hydra; built an evaluation harness within <code>lm-eval-harness</code> to benchmark checkpoints.</li>
+            <li>Derived an attention-based theoretical upper bound on parallel-unmasking error and proposed new re-ranking rules for token unmasking, leading to a NeurIPS 2026 publication.</li>
+          </ul>
+        </li>
+        <li class="entry">
+          <span class="entry-date">Jan 2026 – Jun 2026</span>
+          <h3 class="entry-title">AI Intern</h3>
+          <p class="entry-org">Swiss AI Initiative, ETH &amp; EPFL AI Center · Switzerland</p>
+          <ul>
+            <li>Built a multi-node audio–text preprocessing pipeline, deploying transcription models with vLLM for voice-activity detection, language identification and transcription at 2,100 s/s throughput.</li>
+            <li>Converted audio–text data into Megatron indexed datasets for LLM pretraining by interleaving audio and text tokens.</li>
+            <li>Benchmarked dynamic frame-rate audio tokenizers on acoustic and semantic performance for the Apertus LLM; compared multi-head delayed-pattern decoding against single-head decoding with 2D RoPE.</li>
+          </ul>
+        </li>
+        <li class="entry">
+          <span class="entry-date">May 2023 – Jul 2023</span>
+          <h3 class="entry-title">SPARK Fellow</h3>
+          <p class="entry-org">Indian Institute of Technology Roorkee · India</p>
+          <p class="entry-note">With Prof. Narayan Mohanta, Department of Physics</p>
+          <ul>
+            <li>Developed a multi-node C++ Monte Carlo simulation using OpenMPI and 2D sublattice partitioning, achieving linear scaling with the number of nodes.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Earlier research -->
+    <section class="section" id="earlier-research">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Earlier research &amp; internships</h2>
+        </div>
+      </div>
+      <ul class="compact-list">
+        <li>
+          <span class="when">Nov – Dec 2025</span>
+          <div class="what"><strong>OATES Lab, EPFL</strong>
+            <span>Trained deep CNNs and density-map regression models for counting patterns in images, using transfer learning and cross-validated hyperparameter tuning.</span></div>
+        </li>
+        <li>
+          <span class="when">May 2024 – May 2025</span>
+          <div class="what"><strong>DAAD-WISE Fellow, Technical University of Munich</strong> · Germany
+            <span>Built a Numba-JIT cellular-automata framework in Python to study the statistical dynamics of groups and semigroups through autocorrelation and complexity metrics.</span></div>
+        </li>
+        <li>
+          <span class="when">Jul – Aug 2023</span>
+          <div class="what"><strong>TSSP Fellow, Nicolaus Copernicus University</strong> · Toruń, Poland
+            <span>Built an OCT image-stitching pipeline in Python and OpenCV, aligning high-resolution sequences into wide-field composites with SIFT and RANSAC homography estimation. Bio-optics and Optical Engineering Lab.</span></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Publications & talks -->
+    <section class="section" id="publications">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Publications</h2>
+        </div>
+      </div>
+      <ul class="pub-list">
+        <li class="pub">
+          <span class="pub-venue">NeurIPS 2026</span>
+          <div>
+            <h3 class="pub-title">Attention-Discounted Adaptive Sampler for Masked Diffusion Language Models</h3>
+            <p class="pub-authors">Y. Sahin, <strong>A. R. Saikia</strong>, V. Cevher, P. Favaro</p>
+            <p class="pub-meta">Advances in Neural Information Processing Systems, 2026</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2606.10829" target="_blank" rel="noopener">arXiv
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="pub-venue">Phys. Rev. B</span>
+          <div>
+            <h3 class="pub-title">Anomalous magnetoentropic response of skyrmion crystals</h3>
+            <p class="pub-authors"><strong>A. R. Saikia</strong>, N. Mohanta</p>
+            <p class="pub-meta">Physical Review B 110(13), 134430 · 2024</p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1103/PhysRevB.110.134430" target="_blank" rel="noopener">DOI
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Honours -->
+    <section class="section" id="awards">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Honours &amp; awards</h2>
+        </div>
+      </div>
+      <ul class="compact-list">
+        <li>
+          <span class="when">Oct 2025</span>
+          <div class="what"><a href="https://credsverse.com/credentials/b654357c-2839-4bb4-8870-f02daa4c3279" target="_blank" rel="noopener"><strong>Runner-up, Argusa AI Challenge</strong></a>
+            <span>Ranked 3rd of 20 teams with a multimodal retrieval-augmented generation application.</span></div>
+        </li>
+        <li>
+          <span class="when">Sep 2025</span>
+          <div class="what"><strong>Department Gold Medal</strong>, Engineering Physics, IIT Roorkee</div>
+        </li>
+        <li>
+          <span class="when">Sep 2025</span>
+          <div class="what"><strong>Professional Development and Innovation Award</strong>, IIT Roorkee
+            <span>Awarded for overall excellence.</span></div>
+        </li>
+        <li>
+          <span class="when">May 2024</span>
+          <div class="what"><strong>DAAD-WISE Fellowship</strong>
+            <span>One of 200 recipients selected nationally for research at TU Munich, Germany.</span></div>
+        </li>
+        <li>
+          <span class="when">May 2024</span>
+          <div class="what"><strong>MITACS Globalink Research Internship (GRI) Fellowship</strong>
+            <span>Selected from across India for research at a Canadian university.</span></div>
+        </li>
+        <li>
+          <span class="when">Jan 2024</span>
+          <div class="what"><strong>UG Chanakya Fellowship</strong>, iHUB IIT Roorkee
+            <span>Awarded to conduct a student project in AI/ML.</span></div>
+        </li>
+        <li>
+          <span class="when">2023, 2024</span>
+          <div class="what"><strong>Heritage Excellence Award</strong>
+            <span>For academic excellence in the department.</span></div>
+        </li>
+        <li>
+          <span class="when">2023</span>
+          <div class="what"><strong>Toruń Summer Student Fellowship (TSSP)</strong>
+            <span>Selected for research at Nicolaus Copernicus University, Poland.</span></div>
+        </li>
+        <li>
+          <span class="when">2022</span>
+          <div class="what"><strong>Mimamsa</strong>, national science competition
+            <span>Third runner-up among 990+ teams.</span></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Skills</h2>
+        </div>
+      </div>
+      <div class="card skill-groups">
+        <div class="skill-group">
+          <h3>Programming languages</h3>
+          <ul class="tag-list">
+            <li class="tag tag-accent">Python</li>
+            <li class="tag tag-accent">C / C++</li>
+            <li class="tag tag-accent">Rust</li>
+            <li class="tag tag-accent">SQL</li>
+            <li class="tag tag-accent">Scala</li>
+            <li class="tag tag-accent">Bash</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Machine learning</h3>
+          <ul class="tag-list">
+            <li class="tag">PyTorch</li>
+            <li class="tag">CUDA</li>
+            <li class="tag">vLLM</li>
+            <li class="tag">Hugging Face</li>
+            <li class="tag">Hydra</li>
+            <li class="tag">NumPy</li>
+            <li class="tag">Pandas</li>
+            <li class="tag">LangChain</li>
+            <li class="tag">OpenCV</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; infrastructure</h3>
+          <ul class="tag-list">
+            <li class="tag">Apache Flink</li>
+            <li class="tag">Apache Kafka</li>
+            <li class="tag">Spark</li>
+            <li class="tag">DuckDB</li>
+            <li class="tag">Docker / Podman</li>
+            <li class="tag">Kubernetes / OpenShift</li>
+            <li class="tag">Terraform</li>
+            <li class="tag">Asyncio</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Parallel computing &amp; tooling</h3>
+          <ul class="tag-list">
+            <li class="tag">OpenMPI</li>
+            <li class="tag">OpenMP</li>
+            <li class="tag">Git</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Relevant coursework</h3>
+          <ul class="tag-list">
+            <li class="tag">Systems for Data Management &amp; Data Science</li>
+            <li class="tag">Mathematics of Data: Theory to Computation</li>
+            <li class="tag">Deep Learning</li>
+            <li class="tag">Machine Learning</li>
+            <li class="tag">Parallel &amp; High-Performance Computing</li>
+            <li class="tag">Numerical Analysis</li>
+            <li class="tag">Data Structures</li>
+            <li class="tag">Algorithms</li>
+            <li class="tag">Linear Algebra</li>
+            <li class="tag">Probability &amp; Stochastic Calculus</li>
+            <li class="tag">Advanced Calculus</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="section" id="leadership">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Leadership, teaching &amp; community</h2>
+        </div>
+      </div>
+      <ul class="compact-list">
+        <li>
+          <span class="when">Mar 2024 – Mar 2025</span>
+          <div class="what"><strong>Vice-President, Physics Association</strong>, IIT Roorkee
+            <span>Organised departmental events and student–alumni interactions to support career guidance.</span></div>
+        </li>
+        <li>
+          <span class="when">Oct 2022 – May 2025</span>
+          <div class="what"><strong>Executive, Physics &amp; Astronomy Club</strong>, IIT Roorkee
+            <span>Organised physics and maths lectures, workshops and journal sessions, and mentored student projects through to completion.</span></div>
+        </li>
+        <li>
+          <span class="when">Jun 2025</span>
+          <div class="what"><strong>Summer Camp Instructor</strong>, M.P. Academy, Assam
+            <span>Mentored 30+ school students through hands-on robotics and AI sessions.</span></div>
+        </li>
+        <li>
+          <span class="when">Dec 2022 – Feb 2023</span>
+          <div class="what"><strong>Teaching Assistant</strong>, IIT Roorkee
+            <span>Supported 40+ students in MAN-001 Mathematics-I (Real Analysis) with problem sessions and derivations.</span></div>
+        </li>
+        <li>
+          <span class="when">Workshop</span>
+          <div class="what"><strong>Decentralized Federated Learning using LLM-based Autonomous Agents</strong>
+            <span>Safe AI Lausanne</span></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Languages -->
+    <section class="section" id="languages">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Spoken languages</h2>
+        </div>
+      </div>
+      <ul class="languages">
+        <li><strong>English</strong><span>Advanced</span></li>
+        <li><strong>German</strong><span>A1</span></li>
+        <li><strong>Hindi</strong><span>Advanced</span></li>
+        <li><strong>Assamese</strong><span>Native</span></li>
+      </ul>
+    </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container container-wide footer-wrap">
+      <p>© <span id="year">2026</span> Ahmed Rockey Saikia</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

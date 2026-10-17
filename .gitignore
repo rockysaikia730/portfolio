@@ -1,0 +1,7 @@
+# Keep the LaTeX CV source (contains phone number and address) out of the public site
+CV/
+.DS_Store
+.claude/
+
+# Original photo (the site uses the cropped assets/img/profile.jpg)
+IMG_2343.JPG
